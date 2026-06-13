@@ -1,0 +1,149 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "brightlocal": "https://www.brightlocal.com/api/vocab#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "image": "schema:image",
+    "provider": "schema:provider",
+    "dateCreated": {"@id": "schema:dateCreated", "@type": "xsd:date"},
+    "dateModified": {"@id": "schema:dateModified", "@type": "xsd:date"},
+
+    "BrightLocalAPI": "brightlocal:BrightLocalAPI",
+    "Batch": "brightlocal:Batch",
+    "BatchJob": "brightlocal:BatchJob",
+    "Location": "brightlocal:Location",
+    "Client": "brightlocal:Client",
+    "Review": "brightlocal:Review",
+    "Citation": "brightlocal:Citation",
+    "Ranking": "brightlocal:Ranking",
+    "OffsiteSEO": "brightlocal:OffsiteSEO",
+    "GoogleMyBusiness": "brightlocal:GoogleMyBusiness",
+    "CitationTracker": "brightlocal:CitationTracker",
+
+    "apiKey": {"@id": "brightlocal:apiKey", "@type": "xsd:string"},
+    "batchId": {"@id": "brightlocal:batchId", "@type": "xsd:integer"},
+    "locationId": {"@id": "brightlocal:locationId", "@type": "xsd:integer"},
+    "clientId": {"@id": "brightlocal:clientId", "@type": "xsd:integer"},
+    "jobId": {"@id": "brightlocal:jobId", "@type": "xsd:integer"},
+    "reportId": {"@id": "brightlocal:reportId", "@type": "xsd:integer"},
+
+    "status": {"@id": "brightlocal:status", "@type": "xsd:string"},
+    "country": {"@id": "brightlocal:country", "@type": "xsd:string"},
+    "businessType": {"@id": "brightlocal:businessType", "@type": "xsd:string"},
+    "searchTerms": {"@id": "brightlocal:searchTerms", "@type": "xsd:string"},
+    "googleLocation": {"@id": "brightlocal:googleLocation", "@type": "xsd:string"},
+    "profileUrl": {"@id": "brightlocal:profileUrl", "@type": "xsd:anyURI"},
+    "websiteUrl": {"@id": "brightlocal:websiteUrl", "@type": "xsd:anyURI"},
+    "primaryLocation": {"@id": "brightlocal:primaryLocation", "@type": "xsd:string"},
+    "schedule": {"@id": "brightlocal:schedule", "@type": "xsd:string"},
+    "reportType": {"@id": "brightlocal:reportType", "@type": "xsd:string"},
+    "domainAuthority": {"@id": "brightlocal:domainAuthority", "@type": "xsd:integer"},
+
+    "baseUrl": {"@id": "brightlocal:baseUrl", "@type": "xsd:anyURI"},
+    "apiVersion": {"@id": "brightlocal:apiVersion", "@type": "xsd:string"},
+    "authMethod": {"@id": "brightlocal:authMethod", "@type": "xsd:string"},
+    "responseFormat": {"@id": "brightlocal:responseFormat", "@type": "xsd:string"},
+    "errors": {"@id": "brightlocal:errors", "@container": "@set"},
+
+    "LocalSEO": "brightlocal:LocalSEO",
+    "ReputationManagement": "brightlocal:ReputationManagement",
+    "ListingsManagement": "brightlocal:ListingsManagement",
+    "RankTracking": "brightlocal:RankTracking",
+    "CitationBuilding": "brightlocal:CitationBuilding"
+  },
+  "@graph": [
+    {
+      "@id": "brightlocal:BrightLocalAPI",
+      "@type": "schema:WebAPI",
+      "name": "BrightLocal API",
+      "description": "RESTful API providing programmatic access to BrightLocal local SEO tools including rank tracking, listings management, citation building, reputation management, and AI-powered insights.",
+      "url": "https://apidocs.brightlocal.com/",
+      "schema:documentation": "https://developer.brightlocal.com/",
+      "brightlocal:baseUrl": "https://tools.brightlocal.com/seo-tools/api",
+      "brightlocal:authMethod": "API Key",
+      "brightlocal:responseFormat": "JSON",
+      "schema:termsOfService": "https://www.brightlocal.com/terms/",
+      "schema:provider": {
+        "@type": "schema:Organization",
+        "name": "BrightLocal",
+        "url": "https://www.brightlocal.com/",
+        "schema:sameAs": [
+          "https://github.com/BrightLocal",
+          "https://www.linkedin.com/company/bright-local-seo/",
+          "https://x.com/brightlocal"
+        ]
+      },
+      "schema:hasOfferCatalog": {
+        "@type": "schema:OfferCatalog",
+        "name": "BrightLocal API Endpoints",
+        "schema:itemListElement": [
+          {
+            "@type": "schema:Offer",
+            "name": "Batch API",
+            "description": "Container for grouping multiple API requests; supports create, commit, poll results, and delete operations.",
+            "brightlocal:basePath": "/v4/batch"
+          },
+          {
+            "@type": "schema:Offer",
+            "name": "Reviews API",
+            "description": "Fetch reviews by profile URL or business data from directories including Google, Yahoo, Yelp, and Trustpilot.",
+            "brightlocal:basePath": "/v4/ld/"
+          },
+          {
+            "@type": "schema:Offer",
+            "name": "Offsite SEO API",
+            "description": "Retrieve domain authority and hosting information for website URLs.",
+            "brightlocal:basePath": "/v4/seo/offsite"
+          },
+          {
+            "@type": "schema:Offer",
+            "name": "Citation Tracker API",
+            "description": "Add, update, run, retrieve, and delete citation tracking reports for local business listings.",
+            "brightlocal:basePath": "/v2/ct/"
+          },
+          {
+            "@type": "schema:Offer",
+            "name": "Google My Business API",
+            "description": "Add, update, run, retrieve, and delete Google My Business performance reports.",
+            "brightlocal:basePath": "/v4/gpw/"
+          },
+          {
+            "@type": "schema:Offer",
+            "name": "Rankings API (new)",
+            "description": "Track local search rankings; current generation available at the BrightLocal Developer Portal.",
+            "url": "https://developer.brightlocal.com/docs/data-apis/a65f86e53ce22-rankings-api"
+          },
+          {
+            "@type": "schema:Offer",
+            "name": "Locations API (new)",
+            "description": "Manage business location profiles; current generation available at the BrightLocal Developer Portal.",
+            "url": "https://developer.brightlocal.com/docs/management-apis/a8chirfprjb2p-locations"
+          },
+          {
+            "@type": "schema:Offer",
+            "name": "Clients API (new)",
+            "description": "Manage agency client records; current generation available at the BrightLocal Developer Portal.",
+            "url": "https://developer.brightlocal.com/docs/management-apis/j13dhiwfwfldc-clients"
+          },
+          {
+            "@type": "schema:Offer",
+            "name": "Local Rank Tracker API (new)",
+            "description": "Track local search rankings; current generation available at the BrightLocal Developer Portal.",
+            "url": "https://brightlocal.stoplight.io/docs/management-apis/zmd64hm2pgta3-local-rank-tracker"
+          },
+          {
+            "@type": "schema:Offer",
+            "name": "Citation Builder API (new)",
+            "description": "Build and manage local citations; current generation available at the BrightLocal Developer Portal.",
+            "url": "https://developer.brightlocal.com/docs/management-apis/agjq3z0pfs6nk-citation-builder"
+          }
+        ]
+      }
+    }
+  ]
+}
