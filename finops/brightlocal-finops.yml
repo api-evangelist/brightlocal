@@ -1,0 +1,62 @@
+finops:
+  provider: BrightLocal
+  description: Financial operations guidance for managing BrightLocal API costs, optimizing usage, and controlling spend across local SEO operations.
+  url: https://www.brightlocal.com/pricing/
+
+  costStructure:
+    - type: subscription
+      description: Base platform subscription (Track, Manage, or Grow plan) required for API access. Billed monthly or annually. Annual plans save 25%.
+      billingCycle:
+        - monthly
+        - annual
+      annualDiscount: 25%
+      pricingPage: https://www.brightlocal.com/pricing/
+
+    - type: api-usage
+      description: API usage fees are charged in addition to the base subscription. Charged on a per-request basis. Custom agreement required after 250 free trial requests.
+      pricingModel: per-request
+      trialCredits: 250
+      pricingPage: https://www.brightlocal.com/platform/api-solutions/
+      note: Pricing varies based on data type requested; contact sales for custom agreement
+
+    - type: citation-building
+      description: Pay-as-you-go citation submissions charged per citation. No recurring fee.
+      pricePerUnit: 2
+      priceUnit: USD per citation
+
+    - type: managed-services
+      description: Optional full-service local SEO management at a flat monthly rate.
+      price: 1299
+      currency: USD
+      billingCycle: monthly
+
+  costOptimization:
+    - strategy: Use GET caching
+      description: Cache GET responses locally where possible since GET requests have a higher rate limit (300/min). Avoid redundant reads against the API.
+
+    - strategy: Batch operations
+      description: Use batch API endpoints (POST /v4/batch, PUT /v4/batch) to group multiple operations into single requests, reducing total request count and associated costs.
+
+    - strategy: Annual billing
+      description: Switch to annual billing on base platform plans to receive a 25% discount over monthly billing.
+
+    - strategy: Plan alignment
+      description: Choose the minimum plan tier that provides required API access. Track plan is the entry point for API access at the lowest cost.
+
+    - strategy: Monitor trial usage
+      description: Track consumption of 250 free trial Data API requests carefully before committing to a custom agreement. Use trial period to validate integration value.
+
+    - strategy: Request profiling
+      description: Profile which API methods your integration uses most. Optimize high-frequency write operations (limited to 100/min) to avoid throttling and potential retry costs.
+
+    - strategy: Review API scope
+      description: Only enable API methods and endpoints required for your use case. Unnecessary broad access may lead to higher per-request costs under custom agreements.
+
+  billing:
+    contact: https://www.brightlocal.com/platform/api-solutions/
+    helpCenter: https://help.brightlocal.com/
+    notes:
+      - API fees are in addition to monthly platform subscription costs
+      - Custom pricing agreements required for Data API after trial credits
+      - Pricing increased July 1, 2026 (5% Track; 10% Manage and Grow)
+      - MCP server access is included with Grow plan and BrightLocal Labs access at no additional cost

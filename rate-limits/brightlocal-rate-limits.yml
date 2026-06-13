@@ -1,0 +1,49 @@
+rateLimits:
+  - name: GET Request Rate Limit
+    description: Maximum number of GET requests allowed per minute across all BrightLocal API endpoints.
+    type: requests-per-minute
+    limit: 300
+    scope: per API key
+    methods:
+      - GET
+
+  - name: Write Request Rate Limit
+    description: Maximum number of POST, PUT, PATCH, and DELETE requests allowed per minute across all BrightLocal API endpoints.
+    type: requests-per-minute
+    limit: 100
+    scope: per API key
+    methods:
+      - POST
+      - PUT
+      - PATCH
+      - DELETE
+
+  - name: Trial API Credits
+    description: Free trial credits available for batch/data API methods. Once exhausted, a custom agreement is required for continued API access.
+    type: credits
+    limit: 250
+    scope: per account
+    applies_to: Batch and Data API methods
+    note: Only applies to Data API trial access; standard plan API methods may differ
+
+uptime:
+  guarantee: 99.9%
+  url: https://www.brightlocal.com/platform/api-solutions/
+
+authentication:
+  type: API Key
+  parameter: api-key
+  location: query parameter or request body
+  documentation: https://apidocs.brightlocal.com/
+
+errors:
+  - code: invalid-api-key
+    description: The provided API key is invalid or not associated with the requested method
+  - code: no-trial-requests-left
+    description: Trial API credits have been exhausted for batch API methods
+
+notes:
+  - Rate limits apply per API key
+  - GET requests have a higher limit (300/min) than write operations (100/min)
+  - Contact BrightLocal sales for enterprise rate limit adjustments
+  - Status monitoring available at https://status.brightlocal.com/

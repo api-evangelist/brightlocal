@@ -1,0 +1,91 @@
+plans:
+  - name: Track
+    description: Understand your local search visibility. Run comprehensive local SEO audits, monitor up to 100 keywords and four competitors, visualize rankings on geo-grid maps (5 keywords), monitor citation accuracy, and audit Google Business Profile.
+    url: https://www.brightlocal.com/pricing/
+    pricingModel: subscription
+    billingCycle: monthly
+    pricingPage: https://www.brightlocal.com/pricing/
+    features:
+      - Local SEO audits
+      - Keyword rank tracking (up to 100 keywords)
+      - Competitor monitoring (up to 4 competitors)
+      - Geo-grid rank maps (5 keywords)
+      - Citation accuracy monitoring
+      - Google Business Profile audit
+      - API access (add-on)
+
+  - name: Manage
+    description: Keep your business details accurate everywhere. Includes all Track features plus AI Insights, business data sync across key sites, and Google Business Profile post scheduling.
+    url: https://www.brightlocal.com/pricing/
+    pricingModel: subscription
+    billingCycle: monthly
+    pricingPage: https://www.brightlocal.com/pricing/
+    features:
+      - All Track plan features
+      - AI Insights recommendations
+      - Business data sync (Google, Apple, Facebook, Bing, Yelp)
+      - Google Business Profile post scheduling
+      - Listings Management API access
+      - API access (add-on)
+
+  - name: Grow
+    description: Build trust and attract more customers. Includes all Manage features plus review monitoring across 80+ directories, review gathering via email/SMS/in-store, and review publishing to your website.
+    url: https://www.brightlocal.com/pricing/
+    pricingModel: subscription
+    billingCycle: monthly
+    pricingPage: https://www.brightlocal.com/pricing/
+    features:
+      - All Manage plan features
+      - Review monitoring (80+ directories)
+      - Review gathering (email, SMS, in-store campaigns)
+      - Review publishing to website
+      - MCP server access (BrightLocal Labs)
+      - API access (add-on)
+
+  - name: Citation Builder
+    description: Pay-as-you-go citation building service. Order citations across major directories and data aggregators without a recurring subscription.
+    url: https://www.brightlocal.com/pricing/
+    pricingModel: pay-as-you-go
+    pricePerUnit: 2
+    priceUnit: per citation (USD)
+    features:
+      - Manual citation submissions
+      - Data aggregator submissions
+      - No recurring subscription required
+
+  - name: Managed SEO Services
+    description: Full-service local SEO strategy and execution managed by BrightLocal's expert team.
+    url: https://www.brightlocal.com/pricing/
+    pricingModel: subscription
+    billingCycle: monthly
+    price: 1299
+    currency: USD
+    features:
+      - Full-service local SEO strategy
+      - Expert execution and management
+      - Dedicated account manager
+
+  - name: API Solutions
+    description: Custom API access pricing for agencies and brands requiring programmatic integration. Includes 250 free trial requests for Data APIs. Custom agreement required after trial credits are exhausted. Pricing varies based on data requirements.
+    url: https://www.brightlocal.com/platform/api-solutions/
+    pricingModel: custom
+    pricingPage: https://www.brightlocal.com/platform/api-solutions/
+    trialRequests: 250
+    features:
+      - Local Rank Tracking API
+      - AI Insights API
+      - Locations API
+      - Listings Management API
+      - Citation Building API
+      - Reputation Manager API
+      - 250 free trial requests
+      - Custom pricing agreement
+      - Dedicated account manager
+
+notes:
+  - API access is only available on Track, Manage, or Grow plans
+  - API fees are in addition to monthly package costs
+  - Usage is charged on a per-request basis after trial credits
+  - Annual plans offer 25% savings vs monthly billing
+  - Pricing increased effective July 1, 2026 (5% Track; 10% Manage and Grow)
+  - MCP server access requires active Grow Plan and BrightLocal Labs access
