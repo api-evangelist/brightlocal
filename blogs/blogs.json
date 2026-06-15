@@ -2,7 +2,7 @@
   "provider": "brightlocal",
   "blogUrl": "https://www.brightlocal.com/blog/",
   "feedUrl": "https://www.brightlocal.com/blog/feed/",
-  "fetched": "2026-06-13",
+  "fetched": "2026-06-14T20:42:17Z",
   "posts": [
     {
       "title": "Google I/O 2026: What's Next for SEO?",
@@ -54,7 +54,7 @@
       "description": "Industry professionals share anticipated trends and developments in local search marketing."
     },
     {
-      "title": "New Academy Course – Google Business Profile: Eligibility, Verification, Support, and Suspensions",
+      "title": "New Academy Course \u2013 Google Business Profile: Eligibility, Verification, Support, and Suspensions",
       "url": "https://www.brightlocal.com/blog/new-academy-course-google-business-profile-eligibility-verification-support-and-suspensions/",
       "date": "2025-12-02",
       "author": "Kate Herbert-Smith",
@@ -74,5 +74,13 @@
       "author": "Kate Herbert-Smith",
       "description": "Guide helping businesses defend against and respond to malicious review campaigns targeting their profiles."
     }
-  ]
+  ],
+  "repo": "brightlocal",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/company/bright-local-seo/",
+      "error": "HTTPError"
+    }
+  ],
+  "post_count": 0
 }
