@@ -1,86 +1,14 @@
 {
-  "provider": "brightlocal",
-  "blogUrl": "https://www.brightlocal.com/blog/",
-  "feedUrl": "https://www.brightlocal.com/blog/feed/",
-  "fetched": "2026-06-14T20:42:17Z",
-  "posts": [
-    {
-      "title": "Google I/O 2026: What's Next for SEO?",
-      "url": "https://www.brightlocal.com/blog/google-i-o-2026/",
-      "date": "2026-06-11",
-      "author": "Jenny Bernarde",
-      "description": "A 9-minute exploration of Google's latest announcements and their implications for search engine optimization strategies."
-    },
-    {
-      "title": "BrightLocal now takes you from complex data to clear action in minutes, with AI Insights",
-      "url": "https://www.brightlocal.com/blog/introducing-ai-insights/",
-      "date": "2026-04-08",
-      "author": "Mike Hawkes",
-      "description": "Product announcement detailing a new feature that turns complex local SEO data into clear, prioritized actions."
-    },
-    {
-      "title": "Consumers Want Real World Accountability for Fake Reviews: 2026 Survey Insights",
-      "url": "https://www.brightlocal.com/blog/lcrs-fake-reviews/",
-      "date": "2026-02-25",
-      "author": "Rosie Murphy",
-      "description": "Analysis of consumer attitudes toward fraudulent reviews based on BrightLocal's latest research findings."
-    },
-    {
-      "title": "5 Ways for SMBs to Strengthen Reviews in 2026",
-      "url": "https://www.brightlocal.com/blog/5-ways-for-smbs-to-strengthen-reviews-in-2026/",
-      "date": "2026-02-11",
-      "author": "Rosie Murphy",
-      "description": "Practical tactics for small and medium businesses to enhance their online reputation management."
-    },
-    {
-      "title": "5 Review Management Tactics for Agency Success in 2026",
-      "url": "https://www.brightlocal.com/blog/5-review-management-tactics-for-agency-success-in-2026/",
-      "date": "2026-02-11",
-      "author": "Rosie Murphy",
-      "description": "Strategic approaches agencies can implement to manage client reviews effectively."
-    },
-    {
-      "title": "Introducing the BrightLocal MCP Server: Talk to your Data and Take Action in your Favorite AI Tools",
-      "url": "https://www.brightlocal.com/blog/introducing-mcp-server/",
-      "date": "2026-01-15",
-      "author": "Mike Hawkes",
-      "description": "Introduction to a new integration enabling users to interact with BrightLocal data through preferred AI platforms."
-    },
-    {
-      "title": "Experts' Predictions for Local Marketing in 2026",
-      "url": "https://www.brightlocal.com/blog/experts-predictions-2026/",
-      "date": "2026-01-08",
-      "author": "Kate Herbert-Smith",
-      "description": "Industry professionals share anticipated trends and developments in local search marketing."
-    },
-    {
-      "title": "New Academy Course \u2013 Google Business Profile: Eligibility, Verification, Support, and Suspensions",
-      "url": "https://www.brightlocal.com/blog/new-academy-course-google-business-profile-eligibility-verification-support-and-suspensions/",
-      "date": "2025-12-02",
-      "author": "Kate Herbert-Smith",
-      "description": "Educational course launch covering critical aspects of managing Google Business profiles."
-    },
-    {
-      "title": "Google's Omar Riaz on AI and the Future of Local Search",
-      "url": "https://www.brightlocal.com/blog/googles-omar-future-of-local-search/",
-      "date": "2025-10-22",
-      "author": "Mike Hawkes",
-      "description": "Interview insights with Google representative discussing artificial intelligence's role in local search evolution."
-    },
-    {
-      "title": "Under Attack? Navigating the recent 1-star Google review scams",
-      "url": "https://www.brightlocal.com/learn/review-extortion-scams/",
-      "date": "2025-10-15",
-      "author": "Kate Herbert-Smith",
-      "description": "Guide helping businesses defend against and respond to malicious review campaigns targeting their profiles."
-    }
-  ],
   "repo": "brightlocal",
   "feeds": [
     {
-      "source": "https://www.linkedin.com/company/bright-local-seo/",
-      "error": "HTTPError"
+      "source": "https://www.brightlocal.com/blog/",
+      "feed_url": "",
+      "saved": 0,
+      "method": "agent-scrape"
     }
   ],
-  "post_count": 0
+  "fetched": "2026-06-27T12:29:18Z",
+  "post_count": 1,
+  "agent_pulled": "2026-06-27"
 }
