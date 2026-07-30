@@ -1,7 +1,19 @@
 aid: brightlocal
 name: BrightLocal
 description: BrightLocal is a local SEO platform offering a REST API for managing local business listings, tracking Google rankings, monitoring reviews, auditing citations, and generating local search reports. Used by 15,000+ agencies and businesses to rank higher in local search.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: paid
+  onboarding: unknown
+  trial: true
+  try_now: false
+  public: false
+  label: Paid (free trial)
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/brightlocal.png
 url: https://raw.githubusercontent.com/api-evangelist/brightlocal/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
